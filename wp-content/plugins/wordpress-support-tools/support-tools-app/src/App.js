@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Container, Button, Grid, Box } from '@mui/material';
 import TabPanel from './components/TabPanel.jsx'
