@@ -1,18 +1,16 @@
-import { Box, ButtonGroup, Button } from '@mui/material';
+import { ButtonGroup, Button } from '@mui/material';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
 import Features from './Features.jsx';
 import Setting from './Setting.jsx';
 
 function TabPanel(props) {
-  const home = window.location.hostname == 'liamhome.wsl' ? '/wp-admin/admin.php?page=support_tools' : '';
-  const page = window.location.hostname == 'liamhome.wsl' ? '/wp-admin/' : '';
+  const home = window.location.hostname === 'liamhome.wsl' ? '/wp-admin/admin.php?page=support_tools' : '';
+  const page = window.location.hostname === 'liamhome.wsl' ? '/wp-admin/' : '';
 
   return (
     <>

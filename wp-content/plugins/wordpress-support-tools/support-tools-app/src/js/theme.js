@@ -1,4 +1,4 @@
-import { makeStyles  } from '@mui/styles';
+import {} from '@mui/styles';
 
 export const lightTheme = {
   body: '#E2E2E2',
