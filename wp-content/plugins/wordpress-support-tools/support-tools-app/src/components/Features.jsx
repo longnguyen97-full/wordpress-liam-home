@@ -1,15 +1,14 @@
 import { React, useState } from 'react';
 import { TextField, InputLabel } from '@mui/material';
 import { FiCopy } from "react-icons/fi";
-import { FeaturesStyle } from '../css/features.css';
+import {} from '../css/features.css';
 
 function Features() {
   const [value, setValue] = useState('');
   const [copySuccess, setCopySuccess] = useState('');
   const handleChange = (e) => setValue(formatHTMLAnchor(e.target.value));
-  const className = '';
   const copyToClipboard = (value) => {
-    if (value != "") {
+    if (value !== "") {
       navigator.clipboard.writeText(value);
       setCopySuccess('copied');
     }
@@ -33,7 +32,7 @@ function Features() {
 
 function formatHTMLAnchor(value) {
   return (
-    value.replace(/\s|_/g, '-')
+    value.toLowerCase().replace(/\s|_/g, '-')
   );
 }
 
